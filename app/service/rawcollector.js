@@ -3,6 +3,10 @@ const Service = require('egg').Service;
 class rawcollectorService extends Service {
   constructor(ctx) {
     super(ctx);
+    
+
+
+
   }
 
   async create(params) {
