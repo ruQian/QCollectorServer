@@ -28,3 +28,12 @@ module.exports = appInfo => {
     ...userConfig,
   };
 };
+/*
+module.exports = {
+  // 加载 errorHandler 中间件
+  middleware: [ 'errorHandler' ],
+  // 只对 /api 前缀的 url 路径生效
+  errorHandler: {
+    match: '/api',
+  },
+};*/

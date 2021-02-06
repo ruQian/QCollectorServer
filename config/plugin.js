@@ -7,3 +7,7 @@ module.exports = {
   //   enable: true,
   // }
 };
+exports.validate = {
+  enable: true,
+  package: 'egg-validate',
+};
