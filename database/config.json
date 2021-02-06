@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "password": "ruBO8823",
+    "database": "QMInfos",
+    "host": "8.131.255.126",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "password": "ruBO8823",
+    "database": "QMInfos",
+    "host": "8.131.255.126",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "password": "ruBO8823",
+    "database": "QMInfos",
+    "host": "8.131.255.126",
     "dialect": "mysql"
   }
 }
