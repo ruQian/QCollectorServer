@@ -28,6 +28,12 @@ module.exports = appInfo => {
     ...userConfig,
   };
 };
+
+
+//exports.validate = {
+  // convert: false,
+  // validateRoot: false,
+//};
 /*
 module.exports = {
   // 加载 errorHandler 中间件
