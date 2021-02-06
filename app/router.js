@@ -6,5 +6,5 @@
 module.exports = app => {
   const { router, controller } = app;
   //router.get('/', controller.home.index);
-  app.router.resources('qcollector', '/api/v1/qcollector', app.controller.qcollector);
+  app.router.resources('Rawcollector', '/api/v1/12', controller.Rawcollector);
 };

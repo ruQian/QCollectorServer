@@ -4,14 +4,14 @@ const Controller = require('egg').Controller;
 const createRule = {
     rawdata: 'string',
   };
-  class RawCollectorController extends Controller {
+  class rawcollectorController extends Controller {
     async create() {
       const ctx = this.ctx;
       // 校验 `ctx.request.body` 是否符合我们预期的格式
       // 如果参数校验未通过，将会抛出一个 status = 422 的异常
-      ctx.validate(createRule, ctx.request.body);
+      //ctx.validate(createRule, ctx.request.body);
       // 调用 service 创建一个 topic
-      const id = await ctx.service.topics.create(ctx.request.body);
+      const id = 0;//await ctx.service.topics.create(ctx.request.body);
       // 设置响应体和状态码
       ctx.body = {
         topic_id: id,
@@ -19,5 +19,5 @@ const createRule = {
       ctx.status = 201;
     }
   }
-  module.exports = RawCollectorController;
+  module.exports = rawcollectorController;
   

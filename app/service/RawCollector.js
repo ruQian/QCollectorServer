@@ -1,6 +1,6 @@
 const Service = require('egg').Service;
 
-class RawCollectorService extends Service {
+class rawcollectorService extends Service {
   constructor(ctx) {
     super(ctx);
     this.root = 'https://cnodejs.org/api/v1';
@@ -33,4 +33,4 @@ class RawCollectorService extends Service {
   }
 }
 
-module.exports = RawCollectorService;
+module.exports = rawcollectorService;
