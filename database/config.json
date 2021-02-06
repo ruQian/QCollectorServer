@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "root",
-    "password": "ruBO8823",
+    "password": "ruBO8823#",
     "database": "QMInfos",
     "host": "8.131.255.126",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "ruBO8823",
+    "password": "ruBO8823#",
     "database": "QMInfos",
     "host": "8.131.255.126",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "ruBO8823",
+    "password": "ruBO8823#",
     "database": "QMInfos",
     "host": "8.131.255.126",
     "dialect": "mysql"
