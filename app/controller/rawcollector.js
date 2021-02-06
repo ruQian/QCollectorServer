@@ -14,7 +14,7 @@ const createRule = {
       // 如果参数校验未通过，将会抛出一个 status = 422 的异常
       ctx.validate(createRule, ctx.request.body);
       // 调用 service 创建一个 topic
-      const id = 0;//await ctx.service.topics.create(ctx.request.body);
+      const id = await ctx.service.rawcollector.create(ctx.request.body);
       // 设置响应体和状态码
       ctx.body = {
         topic_id: id,
