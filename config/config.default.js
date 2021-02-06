@@ -23,12 +23,23 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.sequelize = {
+    dialect: 'mysql',
+    host: '8.131.255.126',
+    port: 3306,
+    database: 'QQ_DEV',
+    username: 'root',
+    password: "ruBO8823#",
+    define: {
+       freezeTableName: false // 强制表名称等于模型名称
+    }
+  };
   return {
     ...config,
     ...userConfig,
   };
 };
-
+/*
 exports.mysql = {
   // 单数据库信息配置
   client: {
@@ -48,19 +59,8 @@ exports.mysql = {
   // 是否加载到 agent 上，默认关闭
   agent: false,
 };
+*/
 
-
-config.sequelize = {
-  dialect: 'mysql',
-  host: '127.0.0.1',
-  port: 3306,
-  database: 'egg-sequelize-doc-default',
-  username: 'root',
-  password: null,
-  define: {
-     freezeTableName: true // 强制表名称等于模型名称
-  }
-};
 //exports.validate = {
   // convert: false,
   // validateRoot: false,

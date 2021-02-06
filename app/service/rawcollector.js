@@ -10,8 +10,11 @@ class rawcollectorService extends Service {
   }
 
   async create(params) {
+    const ctx = this.ctx;
     //存储数据库
-
+    console.log(params);
+    console.log(ctx.model.qmessage);
+    await ctx.model.qmessage.create({ params });
     return 100;
   }
 
