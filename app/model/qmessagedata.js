@@ -3,7 +3,7 @@
 module.exports = app => {
   const DataTypes = app.Sequelize;
 
-  const Model = app.model.define('qmessagedata', {
+  const Qmessagedata = app.model.define('qmessagedata', {
     id: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
@@ -34,9 +34,9 @@ module.exports = app => {
     tableName: 'qmessagedata'
   });
 
-  Model.associate = function() {
+  Qmessagedata.associate = function() {
 
   }
 
-  return Model;
+  return Qmessagedata;
 };

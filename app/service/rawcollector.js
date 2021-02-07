@@ -13,9 +13,9 @@ class rawcollectorService extends Service {
     const ctx = this.ctx;
     //存储数据库
     console.log(params);
-    console.log(ctx.model.Qmessage);
+    console.log(ctx.model.Qmessagedata);
 
-    ctx.model.Qmessage.findByLogin(1);
+    ctx.model.Qmessagedata.create(1);
     return 100;
   }
 
