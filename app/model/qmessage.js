@@ -2,7 +2,6 @@
 
 module.exports = app => {
    const { STRING, INTEGER, DATE } = app.Sequelize;
-
    const qmessage = app.model.define('qmessage_D_P', {
         id: { type: INTEGER, primaryKey: true, autoIncrement: true },
         //群号 
