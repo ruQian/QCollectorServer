@@ -8,9 +8,9 @@ module.exports = {
      * Example:
      * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-  const DataTypes = app.Sequelize;
-  await queryInterface.createTable('users', {
-       id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+  const DataTypes = Sequelize;
+  await queryInterface.createTable('qmessagedata', {
+       id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
        groupid: DataTypes.STRING(30),
        DOrP: DataTypes.INTEGER,
        telNO: DataTypes.STRING(30),
