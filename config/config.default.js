@@ -31,7 +31,8 @@ module.exports = appInfo => {
     username: 'root',
     password: "ruBO8823#",
     define: {
-       freezeTableName: false // 强制表名称等于模型名称
+       freezeTableName: false, // 强制表名称等于模型名称
+       timestamps:false,
     }
   };
   return {

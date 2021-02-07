@@ -2,7 +2,11 @@ const Controller = require('egg').Controller;
 
 // 定义创建接口的请求参数规则
 const createRule = {
-    rawdata: 'string',
+    groupid:'string',
+    DOrP:'int',
+    telNO:'string',
+    messageDate:'string',
+    rawMessage: 'string',
   };
   class rawcollectorController extends Controller {
     async create() {

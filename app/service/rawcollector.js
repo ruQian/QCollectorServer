@@ -15,7 +15,7 @@ class rawcollectorService extends Service {
     console.log(params);
     console.log(ctx.model.Qmessagedata);
 
-    ctx.model.Qmessagedata.create(1);
+    ctx.model.Qmessagedata.create(params);
     return 100;
   }
 
