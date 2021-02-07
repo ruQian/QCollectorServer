@@ -2,7 +2,7 @@
 
 module.exports = app => {
    const { STRING, INTEGER, DATE } = app.Sequelize;
-   const qmessage = app.model.define('qmessage_D_P', {
+   const Qmessage = app.model.define('qmessage_D_P', {
         id: { type: INTEGER, primaryKey: true, autoIncrement: true },
         //群号 
         groupid: STRING(30),
@@ -16,5 +16,8 @@ module.exports = app => {
         rawMessage: STRING(1024),
    });
 
-   return qmessage;
+   Qmessage.findByLogin = async function(login) {
+      console.log("1111---------------------------");
+    }
+   return Qmessage;
 };

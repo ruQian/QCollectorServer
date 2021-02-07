@@ -3,7 +3,7 @@
 module.exports = app => {
   const DataTypes = app.Sequelize;
 
-  const User = app.model.define('users', {
+  const Users = app.model.define('users', {
     id: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
@@ -30,12 +30,12 @@ module.exports = app => {
     tableName: 'users'
   });
 
-  User.associate = function() {
+  Users.associate = function() {
     console.log("1111---------------------------");
   };
-  User.findByLogin = async function(login) {
+  Users.findByLogin = async function(login) {
     console.log("1111---------------------------");
   }
 
-  return User;
+  return Users;
 };

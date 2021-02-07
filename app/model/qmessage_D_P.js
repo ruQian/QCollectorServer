@@ -3,7 +3,7 @@
 module.exports = app => {
   const DataTypes = app.Sequelize;
 
-  const Model = app.model.define('qmessage_D_P', {
+  const Qmessage_D_P = app.model.define('qmessage_D_P', {
     id: {
       type: DataTypes.INTEGER(11),
       allowNull: false,
@@ -33,10 +33,11 @@ module.exports = app => {
   }, {
     tableName: 'qmessage_D_P'
   });
-
-  Model.associate = function() {
-
+  
+  Qmessage_D_P.findByLogin = async function(login) {
+    console.log("1111---------------------------");
   }
+  
 
-  return Model;
+  return Qmessage_D_P;
 };
