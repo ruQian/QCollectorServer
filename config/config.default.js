@@ -35,6 +35,11 @@ module.exports = appInfo => {
        timestamps:false,
     }
   };
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  };
   return {
     ...config,
     ...userConfig,
